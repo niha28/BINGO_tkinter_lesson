@@ -2,7 +2,7 @@ import pygame
 import sys
 
 # 色の定義
-WHITW = (255, 255, 255)
+WHITE = (255, 255, 255)
 BLACK = (0 ,0, 0)
 
 # メイン処理をする関数
@@ -29,7 +29,7 @@ def main():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
-        txt = font.render(str(tmr), True, WHITW)
+        txt = font.render(str(tmr), True, WHITE)
         screen.fill(BLACK)
         screen.blit(txt, [300, 200])
         pygame.display.update()
